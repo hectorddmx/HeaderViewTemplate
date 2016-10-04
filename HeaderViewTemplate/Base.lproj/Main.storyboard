@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A320" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="H0Q-dU-DKV">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="JIk-RX-uiV">
+            <objects>
+                <viewController id="H0Q-dU-DKV" customClass="ViewController" customModule="HeaderViewTemplate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2di-bT-i6L"/>
+                        <viewControllerLayoutGuide type="bottom" id="bo2-Ah-XCH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jPU-Qu-Ue2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aIC-Dk-V3e" userLabel="Status Bar Overlay View">
+                                <color key="backgroundColor" red="0.015686274510000001" green="0.1176470588" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J0g-BE-GpR" customClass="HeaderView" customModule="HeaderViewTemplate" customModuleProvider="target">
+                                <color key="backgroundColor" red="0.015686274510000001" green="0.1176470588" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="2ap-WX-2eB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="J0g-BE-GpR" firstAttribute="leading" secondItem="jPU-Qu-Ue2" secondAttribute="leading" id="0hJ-2Q-vGI"/>
+                            <constraint firstAttribute="trailing" secondItem="aIC-Dk-V3e" secondAttribute="trailing" id="4OK-NP-L9x"/>
+                            <constraint firstItem="aIC-Dk-V3e" firstAttribute="top" secondItem="jPU-Qu-Ue2" secondAttribute="top" id="Ges-oU-vLr"/>
+                            <constraint firstAttribute="trailing" secondItem="J0g-BE-GpR" secondAttribute="trailing" id="IzA-b7-euq"/>
+                            <constraint firstItem="J0g-BE-GpR" firstAttribute="top" secondItem="2di-bT-i6L" secondAttribute="bottom" id="Mxa-7t-EXm"/>
+                            <constraint firstItem="J0g-BE-GpR" firstAttribute="top" secondItem="aIC-Dk-V3e" secondAttribute="bottom" id="O5M-MH-J2D"/>
+                            <constraint firstItem="J0g-BE-GpR" firstAttribute="top" secondItem="2di-bT-i6L" secondAttribute="bottom" id="PFF-pp-QaN"/>
+                            <constraint firstItem="aIC-Dk-V3e" firstAttribute="leading" secondItem="jPU-Qu-Ue2" secondAttribute="leading" id="ZxV-Bt-md7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="headerView" destination="J0g-BE-GpR" id="bUK-5Y-vrA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bYR-Gy-9yc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-240.80000000000001" y="-293.70314842578711"/>
+        </scene>
+    </scenes>
+</document>
